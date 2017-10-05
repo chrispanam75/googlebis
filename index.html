@@ -1,0 +1,85 @@
+<!-- TODO checker le cross-navigateur -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="index.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+  <title>Google</title>
+  <link rel="icon" type="image/png" href="favico.png"/>
+
+</head>
+<body>
+
+  <!-- bouton initialize -->
+  <button type="button-initialize" class="btn btn-primary btn-lg " id="button-initialize">AFFICHER LES ÉLÉMENTS CENTRAUX</button>
+
+  <section>
+  pensez à activer les scripts js pour réactiver les animations !!
+    <!--NavBar-->
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+
+    <!-- bouton responsive -->
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <a class="navbar-brand" href="#"></a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Gmail <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Images <span class="sr-only">(current)</span></a>
+        </li>
+        <!-- <li class="nav-item active">
+          <a class="nav-link" href="#">
+            <img src="google_logo.jpg" width="30" height="30" class="d-inline-block align-top" alt=""><span class="sr-only">(current)</span></a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <button type="button" class="btn btn-primary">Connexion</button>
+          </a>
+        </li>
+      </ul>
+    </div>
+    </nav>
+
+    <!--container principal-->
+    <div class="jumbotron text-center">
+      <div class="container">
+        <!--div class="col-xs-12" => à ajouter ?!-->
+          <img class="smaller-image img-responsive center-block" src="logo_google_france.png">
+
+          <div class="form-group">
+            <input type="text" id="mots_clefs" class="form-control">
+          </div>
+          <div class="boutons">
+            <button class="btn" id="recherche" role="button">Recherche google </button>
+            <button class="btn" id="generateur" role="button">Générer des grilles</button>
+          </div>
+      </div>
+    </div>
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <!-- Js -->
+    <script src="bouton_affichage.js"></script>
+    <!-- <script src="redirection_google.js"></script> -->
+    <!-- <script src="popup.js"></script> -->
+
+  </section>
+
+</body>
+</html>
